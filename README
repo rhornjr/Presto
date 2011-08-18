@@ -1,0 +1,3 @@
+Presto is an application where users can enter deployment actions (create windows service, alter a config file, etc...) and then execute them all with the push of a button.
+
+By storing deployment steps in Presto, deployments can be automated, and repeated many times, for consistent deployment results.
