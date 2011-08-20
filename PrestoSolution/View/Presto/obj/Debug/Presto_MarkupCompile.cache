@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\DevProjects\PrestoSolution\View\Presto\obj\Debug\
+C:\Users\rhorn\Presto\PrestoSolution\View\Presto\obj\Debug\
 Presto
 none
 false
 DEBUG;TRACE
-C:\DevProjects\PrestoSolution\View\Presto\App.xaml
+C:\Users\rhorn\Presto\PrestoSolution\View\Presto\App.xaml
 15-2065412974
 2-2010760660
 19-606244569
-18-1995403462
+18558214036
 Dialogs\CustomVariableView.xaml;Dialogs\DialogResources.xaml;Dialogs\ProcessTasksView.xaml;Dialogs\TaskCopyFileView.xaml;Dialogs\TaskDosCommandView.xaml;Dialogs\TaskGroupView.xaml;Dialogs\TaskMsiView.xaml;Dialogs\TaskTypeView.xaml;Dialogs\TaskXmlModifyView.xaml;MainWindowResources.xaml;MainWindowView.xaml;Tabs\CustomVariableListView.xaml;Tabs\TaskGroupListView.xaml;Tabs\TaskListView.xaml;Tabs\TaskTypeListView.xaml;
 
