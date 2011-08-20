@@ -1,0 +1,42 @@
+﻿<Window x:Class="Presto.Dialogs.ProcessTasksView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:presto="clr-namespace:Presto"
+    Title="ProcessTasksView" Height="150" Width="300" WindowStartupLocation="CenterScreen"
+    Background="WhiteSmoke">
+    
+    <Window.Resources>
+        <presto:BoolToOppositeBoolConverter x:Key="oppositeConverter" />
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label VerticalAlignment="Center" FontSize="10">Currently Executing Task:</Label>                        
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock VerticalAlignment="Center" Width="260" FontSize="10"
+                       Text="{Binding CurrentlyExecutingTask}"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <ProgressBar Width="260" Height="15" Value="{Binding ProgressValue}" Maximum="{Binding ProgressMaximum}"
+                         Minimum="{Binding ProgressMinimum}" VerticalAlignment="Center"
+                         HorizontalAlignment="Center"></ProgressBar>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="100" Command="{Binding StartCommand}"
+                    IsEnabled="{Binding TaskExecutionStarted, Converter={StaticResource oppositeConverter}}">Start</Button>
+            <Button Width="100" Command="{Binding DoneCommand}" IsEnabled="{Binding TaskExecutionComplete}">Done</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="4">
+            <TextBlock VerticalAlignment="Center" Width="260" FontSize="10" Margin="5" Foreground="Red"
+                       Text="{Binding Status}"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

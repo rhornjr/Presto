@@ -1,0 +1,12 @@
+C:\DevProjects\Demo\RHorn\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.dll
+C:\DevProjects\Demo\RHorn\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.pdb
+C:\DevProjects\Demo\RHorn\PrestoSolution\Model\PrestoCore\obj\Debug\ResolveAssemblyReference.cache
+C:\DevProjects\Demo\RHorn\PrestoSolution\Model\PrestoCore\obj\Debug\PrestoCore.dll
+C:\DevProjects\Demo\RHorn\PrestoSolution\Model\PrestoCore\obj\Debug\PrestoCore.pdb
+C:\DevProjects\Demo\RHorn\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.XML
+C:\DevProjects\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.XML
+C:\DevProjects\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.dll
+C:\DevProjects\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.pdb
+C:\DevProjects\PrestoSolution\Model\PrestoCore\obj\Debug\ResolveAssemblyReference.cache
+C:\DevProjects\PrestoSolution\Model\PrestoCore\obj\Debug\PrestoCore.dll
+C:\DevProjects\PrestoSolution\Model\PrestoCore\obj\Debug\PrestoCore.pdb

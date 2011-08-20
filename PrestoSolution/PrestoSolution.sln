@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{672BF5EA-F962-40A3-A466-EEA254F570F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModel", "ViewModel", "{9F06BC42-1466-47C7-96A0-45CF6CCB5A36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MvvmFramework", "MvvmFramework", "{BA664C90-9B59-47D4-A6A2-B022076D5386}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{E5C1C8E0-04BA-4F64-9033-06562BC8D6AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{F1E73C8B-6CEA-4E6D-A2DD-62FEA1F47AD0}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\CustomDictionary.xml = SolutionItems\CustomDictionary.xml
+		SolutionItems\SolutionInfo.cs = SolutionItems\SolutionInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installers", "Installers", "{101B6AA8-23AB-454F-AA67-8A31D834A836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmTools", "MvvmFramework\MvvmTools\MvvmTools.csproj", "{0BAB6AFE-AC89-4D5C-A25A-EF54AABC01FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrestoCore", "Model\PrestoCore\PrestoCore.csproj", "{2815E13D-8BB3-42E8-B29F-237DCE692879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presto", "View\Presto\Presto.csproj", "{C2E6DAF1-BDF4-49FA-AF72-4F96A76A9588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrestoViewModel", "ViewModel\PrestoViewModel\PrestoViewModel.csproj", "{9A47FCB7-5702-4B22-A572-CCE77D0C5F11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiSelectBehavior", "MvvmFramework\MultiSelectBehavior\MultiSelectBehavior.csproj", "{D168B256-4C70-44B3-A042-44102C16DFC3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PrestoInstaller", "Installers\PrestoInstaller\PrestoInstaller.vdproj", "{C9E546BF-F166-48B6-A8CC-7FD30715A875}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BAB6AFE-AC89-4D5C-A25A-EF54AABC01FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAB6AFE-AC89-4D5C-A25A-EF54AABC01FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAB6AFE-AC89-4D5C-A25A-EF54AABC01FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAB6AFE-AC89-4D5C-A25A-EF54AABC01FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2815E13D-8BB3-42E8-B29F-237DCE692879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2815E13D-8BB3-42E8-B29F-237DCE692879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2815E13D-8BB3-42E8-B29F-237DCE692879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2815E13D-8BB3-42E8-B29F-237DCE692879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E6DAF1-BDF4-49FA-AF72-4F96A76A9588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E6DAF1-BDF4-49FA-AF72-4F96A76A9588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E6DAF1-BDF4-49FA-AF72-4F96A76A9588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E6DAF1-BDF4-49FA-AF72-4F96A76A9588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A47FCB7-5702-4B22-A572-CCE77D0C5F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A47FCB7-5702-4B22-A572-CCE77D0C5F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A47FCB7-5702-4B22-A572-CCE77D0C5F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A47FCB7-5702-4B22-A572-CCE77D0C5F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D168B256-4C70-44B3-A042-44102C16DFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D168B256-4C70-44B3-A042-44102C16DFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D168B256-4C70-44B3-A042-44102C16DFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D168B256-4C70-44B3-A042-44102C16DFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E546BF-F166-48B6-A8CC-7FD30715A875}.Debug|Any CPU.ActiveCfg = Debug
+		{C9E546BF-F166-48B6-A8CC-7FD30715A875}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2E6DAF1-BDF4-49FA-AF72-4F96A76A9588} = {672BF5EA-F962-40A3-A466-EEA254F570F4}
+		{9A47FCB7-5702-4B22-A572-CCE77D0C5F11} = {9F06BC42-1466-47C7-96A0-45CF6CCB5A36}
+		{0BAB6AFE-AC89-4D5C-A25A-EF54AABC01FA} = {BA664C90-9B59-47D4-A6A2-B022076D5386}
+		{D168B256-4C70-44B3-A042-44102C16DFC3} = {BA664C90-9B59-47D4-A6A2-B022076D5386}
+		{2815E13D-8BB3-42E8-B29F-237DCE692879} = {E5C1C8E0-04BA-4F64-9033-06562BC8D6AD}
+		{C9E546BF-F166-48B6-A8CC-7FD30715A875} = {101B6AA8-23AB-454F-AA67-8A31D834A836}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2815E13D-8BB3-42E8-B29F-237DCE692879}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrestoCore</RootNamespace>
+    <AssemblyName>PrestoCore</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/PrestoCore/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\PrestoCore.XML</DocumentationFile>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for PrestoCore.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\SolutionItems\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="BusinessLogic\Attributes\ColumnNameAttribute.cs" />
+    <Compile Include="BusinessLogic\Attributes\TableNameAttribute.cs" />
+    <Compile Include="BusinessLogic\Attributes\TaskTypeAttribute.cs" />
+    <Compile Include="BusinessLogic\Attributes\ViewModelAttribute.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\CustomVariableLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\Logic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskBaseLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskCopyFileLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskDosCommandLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskGroupLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskMsiLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskTypeLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\TaskXmlModifyLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessComponents\Utility.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\CustomVariable.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskBase.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskCopyFile.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskDosCommand.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskGroup.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskMsi.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskType.cs" />
+    <Compile Include="BusinessLogic\BusinessEntities\TaskXmlModify.cs" />
+    <Compile Include="DataAccess\CustomVariableDalc.cs" />
+    <Compile Include="DataAccess\Data.cs" />
+    <Compile Include="DataAccess\DataAccessBase.cs" />
+    <Compile Include="DataAccess\PrestoDataset.cs">
+      <DependentUpon>PrestoDataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataAccess\PrestoDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrestoDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\TaskBaseDalc.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataAccess\PrestoDataset.xsc">
+      <DependentUpon>PrestoDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DataAccess\PrestoDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrestoDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataAccess\PrestoDataset.xss">
+      <DependentUpon>PrestoDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Migrated rules for PrestoCore.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\..\SolutionItems\CustomDictionary.xml">
+      <Link>Properties\CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

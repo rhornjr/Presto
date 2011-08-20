@@ -1,0 +1,10 @@
+C:\DevProjects\Demo\RHorn\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiSelectBehavior.dll
+C:\DevProjects\Demo\RHorn\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiSelectBehavior.pdb
+C:\DevProjects\Demo\RHorn\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\ResolveAssemblyReference.cache
+C:\DevProjects\Demo\RHorn\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.dll
+C:\DevProjects\Demo\RHorn\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.pdb
+C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiSelectBehavior.dll
+C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiSelectBehavior.pdb
+C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\ResolveAssemblyReference.cache
+C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.dll
+C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.pdb

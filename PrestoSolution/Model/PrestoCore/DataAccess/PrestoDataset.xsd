@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrestoDataset" targetNamespace="http://tempuri.org/PrestoDataset.xsd" xmlns:mstns="http://tempuri.org/PrestoDataset.xsd" xmlns="http://tempuri.org/PrestoDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrestoDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PrestoDataset" msprop:Generator_UserDSName="PrestoDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TaskGroup" msprop:Generator_UserTableName="TaskGroup" msprop:Generator_RowEvArgName="TaskGroupRowChangeEvent" msprop:Generator_TableVarName="tableTaskGroup" msprop:Generator_TablePropName="TaskGroup" msprop:Generator_RowDeletingName="TaskGroupRowDeleting" msprop:Generator_RowChangingName="TaskGroupRowChanging" msprop:Generator_RowDeletedName="TaskGroupRowDeleted" msprop:Generator_RowEvHandlerName="TaskGroupRowChangeEventHandler" msprop:Generator_RowChangedName="TaskGroupRowChanged" msprop:Generator_TableClassName="TaskGroupDataTable" msprop:Generator_RowClassName="TaskGroupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskGroupId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msdata:Caption="TaskGroupID" msprop:Generator_ColumnVarNameInTable="columnTaskGroupId" msprop:Generator_ColumnPropNameInRow="TaskGroupId" msprop:Generator_ColumnPropNameInTable="TaskGroupIdColumn" msprop:Generator_UserColumnName="TaskGroupId" type="xs:int" />
+              <xs:element name="TaskGroupName" msprop:Generator_ColumnVarNameInTable="columnTaskGroupName" msprop:Generator_ColumnPropNameInRow="TaskGroupName" msprop:Generator_ColumnPropNameInTable="TaskGroupNameColumn" msprop:Generator_UserColumnName="TaskGroupName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskItem" msprop:Generator_UserTableName="TaskItem" msprop:Generator_RowEvArgName="TaskItemRowChangeEvent" msprop:Generator_TableVarName="tableTaskItem" msprop:Generator_TablePropName="TaskItem" msprop:Generator_RowDeletingName="TaskItemRowDeleting" msprop:Generator_RowChangingName="TaskItemRowChanging" msprop:Generator_RowDeletedName="TaskItemRowDeleted" msprop:Generator_RowEvHandlerName="TaskItemRowChangeEventHandler" msprop:Generator_RowChangedName="TaskItemRowChanged" msprop:Generator_TableClassName="TaskItemDataTable" msprop:Generator_RowClassName="TaskItemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskItemId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msdata:Caption="TaskItemID" msprop:Generator_ColumnVarNameInTable="columnTaskItemId" msprop:Generator_ColumnPropNameInRow="TaskItemId" msprop:Generator_ColumnPropNameInTable="TaskItemIdColumn" msprop:Generator_UserColumnName="TaskItemId" type="xs:int" minOccurs="0" />
+              <xs:element name="FailureCausesAllStop" msprop:Generator_ColumnVarNameInTable="columnFailureCausesAllStop" msprop:Generator_ColumnPropNameInRow="FailureCausesAllStop" msprop:Generator_ColumnPropNameInTable="FailureCausesAllStopColumn" msprop:Generator_UserColumnName="FailureCausesAllStop" type="xs:unsignedByte" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+              <xs:element name="TaskGroupId" msdata:Caption="TaskGroupID" msprop:Generator_ColumnVarNameInTable="columnTaskGroupId" msprop:Generator_ColumnPropNameInRow="TaskGroupId" msprop:Generator_ColumnPropNameInTable="TaskGroupIdColumn" msprop:Generator_UserColumnName="TaskGroupId" type="xs:int" minOccurs="0" />
+              <xs:element name="TaskTypeId" msdata:Caption="TaskTypeID" msprop:Generator_ColumnVarNameInTable="columnTaskTypeId" msprop:Generator_ColumnPropNameInRow="TaskTypeId" msprop:Generator_ColumnPropNameInTable="TaskTypeIdColumn" msprop:Generator_UserColumnName="TaskTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="Sequence" msprop:Generator_ColumnVarNameInTable="columnSequence" msprop:Generator_ColumnPropNameInRow="Sequence" msprop:Generator_ColumnPropNameInTable="SequenceColumn" msprop:Generator_UserColumnName="Sequence" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskCopyFile" msprop:Generator_UserTableName="TaskCopyFile" msprop:Generator_RowEvArgName="TaskCopyFileRowChangeEvent" msprop:Generator_TableVarName="tableTaskCopyFile" msprop:Generator_TablePropName="TaskCopyFile" msprop:Generator_RowDeletingName="TaskCopyFileRowDeleting" msprop:Generator_RowChangingName="TaskCopyFileRowChanging" msprop:Generator_RowDeletedName="TaskCopyFileRowDeleted" msprop:Generator_RowEvHandlerName="TaskCopyFileRowChangeEventHandler" msprop:Generator_RowChangedName="TaskCopyFileRowChanged" msprop:Generator_TableClassName="TaskCopyFileDataTable" msprop:Generator_RowClassName="TaskCopyFileRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskItemId" msdata:Caption="TaskItemID" msprop:Generator_ColumnVarNameInTable="columnTaskItemId" msprop:Generator_ColumnPropNameInRow="TaskItemId" msprop:Generator_ColumnPropNameInTable="TaskItemIdColumn" msprop:Generator_UserColumnName="TaskItemId" type="xs:int" />
+              <xs:element name="SourcePath" msprop:Generator_ColumnVarNameInTable="columnSourcePath" msprop:Generator_ColumnPropNameInRow="SourcePath" msprop:Generator_ColumnPropNameInTable="SourcePathColumn" msprop:Generator_UserColumnName="SourcePath" type="xs:string" />
+              <xs:element name="SourceFileName" msprop:Generator_ColumnVarNameInTable="columnSourceFileName" msprop:Generator_ColumnPropNameInRow="SourceFileName" msprop:Generator_ColumnPropNameInTable="SourceFileNameColumn" msprop:Generator_UserColumnName="SourceFileName" type="xs:string" />
+              <xs:element name="DestinationPath" msprop:Generator_ColumnVarNameInTable="columnDestinationPath" msprop:Generator_ColumnPropNameInRow="DestinationPath" msprop:Generator_ColumnPropNameInTable="DestinationPathColumn" msprop:Generator_UserColumnName="DestinationPath" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskType" msprop:Generator_UserTableName="TaskType" msprop:Generator_RowEvArgName="TaskTypeRowChangeEvent" msprop:Generator_TableVarName="tableTaskType" msprop:Generator_TablePropName="TaskType" msprop:Generator_RowDeletingName="TaskTypeRowDeleting" msprop:Generator_RowChangingName="TaskTypeRowChanging" msprop:Generator_RowDeletedName="TaskTypeRowDeleted" msprop:Generator_RowEvHandlerName="TaskTypeRowChangeEventHandler" msprop:Generator_RowChangedName="TaskTypeRowChanged" msprop:Generator_TableClassName="TaskTypeDataTable" msprop:Generator_RowClassName="TaskTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskTypeId" msdata:AutoIncrementSeed="1" msdata:Caption="TaskTypeID" msprop:Generator_ColumnVarNameInTable="columnTaskTypeId" msprop:Generator_ColumnPropNameInRow="TaskTypeId" msprop:Generator_ColumnPropNameInTable="TaskTypeIdColumn" msprop:Generator_UserColumnName="TaskTypeId" type="xs:int" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskMsi" msprop:Generator_UserTableName="TaskMsi" msprop:Generator_RowEvArgName="TaskMsiRowChangeEvent" msprop:Generator_TableVarName="tableTaskMsi" msprop:Generator_TablePropName="TaskMsi" msprop:Generator_RowDeletingName="TaskMsiRowDeleting" msprop:Generator_RowChangingName="TaskMsiRowChanging" msprop:Generator_RowDeletedName="TaskMsiRowDeleted" msprop:Generator_RowEvHandlerName="TaskMsiRowChangeEventHandler" msprop:Generator_RowChangedName="TaskMsiRowChanged" msprop:Generator_TableClassName="TaskMsiDataTable" msprop:Generator_RowClassName="TaskMsiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskItemId" msdata:Caption="TaskItemID" msprop:Generator_ColumnVarNameInTable="columnTaskItemId" msprop:Generator_ColumnPropNameInRow="TaskItemId" msprop:Generator_ColumnPropNameInTable="TaskItemIdColumn" msprop:Generator_UserColumnName="TaskItemId" type="xs:int" />
+              <xs:element name="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn" msprop:Generator_UserColumnName="Path" type="xs:string" />
+              <xs:element name="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" msprop:Generator_UserColumnName="FileName" type="xs:string" />
+              <xs:element name="PassiveInstall" msprop:Generator_ColumnVarNameInTable="columnPassiveInstall" msprop:Generator_ColumnPropNameInRow="PassiveInstall" msprop:Generator_ColumnPropNameInTable="PassiveInstallColumn" msprop:Generator_UserColumnName="PassiveInstall" type="xs:unsignedByte" />
+              <xs:element name="ProductGuid" msdata:Caption="ProductGUID" msprop:Generator_ColumnVarNameInTable="columnProductGuid" msprop:Generator_ColumnPropNameInRow="ProductGuid" msprop:Generator_ColumnPropNameInTable="ProductGuidColumn" msprop:Generator_UserColumnName="ProductGuid" type="xs:string" />
+              <xs:element name="IisWebSite" msdata:Caption="IISWebSite" msprop:Generator_ColumnVarNameInTable="columnIisWebSite" msprop:Generator_ColumnPropNameInRow="IisWebSite" msprop:Generator_ColumnPropNameInTable="IisWebSiteColumn" msprop:Generator_UserColumnName="IisWebSite" type="xs:string" />
+              <xs:element name="Install" msprop:Generator_ColumnVarNameInTable="columnInstall" msprop:Generator_ColumnPropNameInRow="Install" msprop:Generator_ColumnPropNameInTable="InstallColumn" msprop:Generator_UserColumnName="Install" type="xs:unsignedByte" />
+              <xs:element name="InstallationLocation" msprop:Generator_ColumnVarNameInTable="columnInstallationLocation" msprop:Generator_ColumnPropNameInRow="InstallationLocation" msprop:Generator_ColumnPropNameInTable="InstallationLocationColumn" msprop:Generator_UserColumnName="InstallationLocation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskDosCommand" msprop:Generator_UserTableName="TaskDosCommand" msprop:Generator_RowEvArgName="TaskDosCommandRowChangeEvent" msprop:Generator_TableVarName="tableTaskDosCommand" msprop:Generator_TablePropName="TaskDosCommand" msprop:Generator_RowDeletingName="TaskDosCommandRowDeleting" msprop:Generator_RowChangingName="TaskDosCommandRowChanging" msprop:Generator_RowDeletedName="TaskDosCommandRowDeleted" msprop:Generator_RowEvHandlerName="TaskDosCommandRowChangeEventHandler" msprop:Generator_RowChangedName="TaskDosCommandRowChanged" msprop:Generator_TableClassName="TaskDosCommandDataTable" msprop:Generator_RowClassName="TaskDosCommandRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskItemId" msdata:Caption="TaskItemID" msprop:Generator_ColumnVarNameInTable="columnTaskItemId" msprop:Generator_ColumnPropNameInRow="TaskItemId" msprop:Generator_ColumnPropNameInTable="TaskItemIdColumn" msprop:Generator_UserColumnName="TaskItemId" type="xs:int" />
+              <xs:element name="DosExecutable" msdata:Caption="DOSExecutable" msprop:Generator_ColumnVarNameInTable="columnDosExecutable" msprop:Generator_ColumnPropNameInRow="DosExecutable" msprop:Generator_ColumnPropNameInTable="DosExecutableColumn" msprop:Generator_UserColumnName="DosExecutable" type="xs:string" />
+              <xs:element name="Parameters" msprop:Generator_ColumnVarNameInTable="columnParameters" msprop:Generator_ColumnPropNameInRow="Parameters" msprop:Generator_ColumnPropNameInTable="ParametersColumn" msprop:Generator_UserColumnName="Parameters" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskXmlModify" msprop:Generator_UserTableName="TaskXmlModify" msprop:Generator_RowEvArgName="TaskXmlModifyRowChangeEvent" msprop:Generator_TableVarName="tableTaskXmlModify" msprop:Generator_TablePropName="TaskXmlModify" msprop:Generator_RowDeletingName="TaskXmlModifyRowDeleting" msprop:Generator_RowChangingName="TaskXmlModifyRowChanging" msprop:Generator_RowDeletedName="TaskXmlModifyRowDeleted" msprop:Generator_RowEvHandlerName="TaskXmlModifyRowChangeEventHandler" msprop:Generator_RowChangedName="TaskXmlModifyRowChanged" msprop:Generator_TableClassName="TaskXmlModifyDataTable" msprop:Generator_RowClassName="TaskXmlModifyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskItemId" msdata:Caption="TaskItemID" msprop:Generator_ColumnVarNameInTable="columnTaskItemId" msprop:Generator_ColumnPropNameInRow="TaskItemId" msprop:Generator_ColumnPropNameInTable="TaskItemIdColumn" msprop:Generator_UserColumnName="TaskItemId" type="xs:int" />
+              <xs:element name="XmlPathAndFileName" msprop:Generator_ColumnVarNameInTable="columnXmlPathAndFileName" msprop:Generator_ColumnPropNameInRow="XmlPathAndFileName" msprop:Generator_ColumnPropNameInTable="XmlPathAndFileNameColumn" msprop:Generator_UserColumnName="XmlPathAndFileName" type="xs:string" />
+              <xs:element name="NodeToChange" msprop:Generator_ColumnVarNameInTable="columnNodeToChange" msprop:Generator_ColumnPropNameInRow="NodeToChange" msprop:Generator_ColumnPropNameInTable="NodeToChangeColumn" msprop:Generator_UserColumnName="NodeToChange" type="xs:string" />
+              <xs:element name="AttributeKey" msprop:Generator_ColumnVarNameInTable="columnAttributeKey" msprop:Generator_ColumnPropNameInRow="AttributeKey" msprop:Generator_ColumnPropNameInTable="AttributeKeyColumn" msprop:Generator_UserColumnName="AttributeKey" type="xs:string" />
+              <xs:element name="AttributeKeyValue" msprop:Generator_ColumnVarNameInTable="columnAttributeKeyValue" msprop:Generator_ColumnPropNameInRow="AttributeKeyValue" msprop:Generator_ColumnPropNameInTable="AttributeKeyValueColumn" msprop:Generator_UserColumnName="AttributeKeyValue" type="xs:string" />
+              <xs:element name="AttributeToChange" msprop:Generator_ColumnVarNameInTable="columnAttributeToChange" msprop:Generator_ColumnPropNameInRow="AttributeToChange" msprop:Generator_ColumnPropNameInTable="AttributeToChangeColumn" msprop:Generator_UserColumnName="AttributeToChange" type="xs:string" />
+              <xs:element name="AttributeToChangeValue" msprop:Generator_ColumnVarNameInTable="columnAttributeToChangeValue" msprop:Generator_ColumnPropNameInRow="AttributeToChangeValue" msprop:Generator_ColumnPropNameInTable="AttributeToChangeValueColumn" msprop:Generator_UserColumnName="AttributeToChangeValue" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustomVariable" msprop:Generator_TableClassName="CustomVariableDataTable" msprop:Generator_TableVarName="tableCustomVariable" msprop:Generator_TablePropName="CustomVariable" msprop:Generator_RowDeletingName="CustomVariableRowDeleting" msprop:Generator_UserTableName="CustomVariable" msprop:Generator_RowChangingName="CustomVariableRowChanging" msprop:Generator_RowEvHandlerName="CustomVariableRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomVariableRowDeleted" msprop:Generator_RowEvArgName="CustomVariableRowChangeEvent" msprop:Generator_RowChangedName="CustomVariableRowChanged" msprop:Generator_RowClassName="CustomVariableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskGroupId" msprop:Generator_ColumnVarNameInTable="columnTaskGroupId" msprop:Generator_ColumnPropNameInRow="TaskGroupId" msprop:Generator_ColumnPropNameInTable="TaskGroupIdColumn" msprop:Generator_UserColumnName="TaskGroupId" type="xs:int" />
+              <xs:element name="VariableKey" msprop:Generator_ColumnVarNameInTable="columnVariableKey" msprop:Generator_ColumnPropNameInRow="VariableKey" msprop:Generator_ColumnPropNameInTable="VariableKeyColumn" msprop:Generator_UserColumnName="VariableKey" type="xs:string" />
+              <xs:element name="VariableValue" msprop:Generator_ColumnVarNameInTable="columnVariableValue" msprop:Generator_ColumnPropNameInRow="VariableValue" msprop:Generator_ColumnPropNameInTable="VariableValueColumn" msprop:Generator_UserColumnName="VariableValue" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomVariableId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnCustomVariableId" msprop:Generator_ColumnPropNameInRow="CustomVariableId" msprop:Generator_ColumnPropNameInTable="CustomVariableIdColumn" msprop:Generator_UserColumnName="CustomVariableId" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TaskGroupKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TaskGroup" />
+      <xs:field xpath="mstns:TaskGroupId" />
+    </xs:unique>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:TaskItem" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:unique>
+    <xs:unique name="TaskCopyFile_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:TaskCopyFile" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:TaskType" />
+      <xs:field xpath="mstns:TaskTypeId" />
+    </xs:unique>
+    <xs:unique name="TaskType_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:TaskType" />
+      <xs:field xpath="mstns:Description" />
+    </xs:unique>
+    <xs:unique name="TaskMsi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TaskMsi" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:unique>
+    <xs:unique name="TaskDosCommand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TaskDosCommand" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:unique>
+    <xs:unique name="TaskXmlModify_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:TaskXmlModify" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:unique>
+    <xs:unique name="CustomVariable_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:CustomVariable" />
+      <xs:field xpath="mstns:CustomVariableId" />
+    </xs:unique>
+    <xs:unique name="TaskGroupIdVariableKey">
+      <xs:selector xpath=".//mstns:CustomVariable" />
+      <xs:field xpath="mstns:TaskGroupId" />
+      <xs:field xpath="mstns:VariableKey" />
+    </xs:unique>
+    <xs:keyref name="FK_TaskGroup_CustomVariables" refer="TaskGroupKey1" msprop:rel_Generator_UserChildTable="CustomVariable" msprop:rel_Generator_ChildPropName="GetCustomVariableRows" msprop:rel_Generator_UserParentTable="TaskGroup" msprop:rel_Generator_UserRelationName="FK_TaskGroup_CustomVariables" msprop:rel_Generator_RelationVarName="relationFK_TaskGroup_CustomVariables" msprop:rel_Generator_ParentPropName="TaskGroupRow">
+      <xs:selector xpath=".//mstns:CustomVariable" />
+      <xs:field xpath="mstns:TaskGroupId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TaskItem_TaskXMLModify" refer="Constraint1" msprop:rel_Generator_UserChildTable="TaskXmlModify" msprop:rel_Generator_ChildPropName="GetTaskXmlModifyRows" msprop:rel_Generator_ParentPropName="TaskItemRow" msprop:rel_Generator_UserRelationName="FK_TaskItem_TaskXMLModify" msprop:rel_Generator_RelationVarName="relationFK_TaskItem_TaskXMLModify" msprop:rel_Generator_UserParentTable="TaskItem">
+      <xs:selector xpath=".//mstns:TaskXmlModify" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TaskItem_TaskDOSCommand" refer="Constraint1" msprop:rel_Generator_UserChildTable="TaskDosCommand" msprop:rel_Generator_ChildPropName="GetTaskDosCommandRows" msprop:rel_Generator_ParentPropName="TaskItemRow" msprop:rel_Generator_UserRelationName="FK_TaskItem_TaskDOSCommand" msprop:rel_Generator_RelationVarName="relationFK_TaskItem_TaskDOSCommand" msprop:rel_Generator_UserParentTable="TaskItem">
+      <xs:selector xpath=".//mstns:TaskDosCommand" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TaskItem_TaskMSI" refer="Constraint1" msprop:rel_Generator_UserChildTable="TaskMsi" msprop:rel_Generator_ChildPropName="GetTaskMsiRows" msprop:rel_Generator_ParentPropName="TaskItemRow" msprop:rel_Generator_UserRelationName="FK_TaskItem_TaskMSI" msprop:rel_Generator_RelationVarName="relationFK_TaskItem_TaskMSI" msprop:rel_Generator_UserParentTable="TaskItem">
+      <xs:selector xpath=".//mstns:TaskMsi" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TaskItem_TaskCopyFile" refer="Constraint1" msprop:rel_Generator_UserChildTable="TaskCopyFile" msprop:rel_Generator_ChildPropName="GetTaskCopyFileRows" msprop:rel_Generator_ParentPropName="TaskItemRow" msprop:rel_Generator_UserRelationName="FK_TaskItem_TaskCopyFile" msprop:rel_Generator_RelationVarName="relationFK_TaskItem_TaskCopyFile" msprop:rel_Generator_UserParentTable="TaskItem">
+      <xs:selector xpath=".//mstns:TaskCopyFile" />
+      <xs:field xpath="mstns:TaskItemId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TaskGroup_TaskItem" refer="TaskGroupKey1" msprop:rel_Generator_UserChildTable="TaskItem" msprop:rel_Generator_ChildPropName="GetTaskItemRows" msprop:rel_Generator_ParentPropName="TaskGroupRow" msprop:rel_Generator_UserRelationName="FK_TaskGroup_TaskItem" msprop:rel_Generator_RelationVarName="relationFK_TaskGroup_TaskItem" msprop:rel_Generator_UserParentTable="TaskGroup">
+      <xs:selector xpath=".//mstns:TaskItem" />
+      <xs:field xpath="mstns:TaskGroupId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TaskType_TaskItem" refer="Constraint2" msprop:rel_Generator_UserChildTable="TaskItem" msprop:rel_Generator_ChildPropName="GetTaskItemRows" msprop:rel_Generator_ParentPropName="TaskTypeRow" msprop:rel_Generator_UserRelationName="FK_TaskType_TaskItem" msprop:rel_Generator_RelationVarName="relationFK_TaskType_TaskItem" msprop:rel_Generator_UserParentTable="TaskType">
+      <xs:selector xpath=".//mstns:TaskItem" />
+      <xs:field xpath="mstns:TaskTypeId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

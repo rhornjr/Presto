@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presto.MvvmTools</name>
+    </assembly>
+    <members>
+        <member name="T:Presto.MvvmTools.WindowLoader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Presto.MvvmTools.IWindowLoader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.IWindowLoader.Show(Presto.MvvmTools.ViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.IWindowLoader.ShowDialog(Presto.MvvmTools.ViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.IWindowLoader.Register(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="viewModelType"></param>
+            <param name="viewType"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.IWindowLoader.Unregister(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="viewModelType"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.IWindowLoader.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)">
+            <summary>
+            
+            </summary>
+            <param name="messageBoxText"></param>
+            <param name="caption"></param>
+            <param name="button"></param>
+            <param name="icon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presto.MvvmTools.WindowLoader.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.WindowLoader.Register(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="viewModelType"></param>
+            <param name="viewType"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.WindowLoader.Unregister(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="viewModelType"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.WindowLoader.Show(Presto.MvvmTools.ViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.WindowLoader.ShowDialog(Presto.MvvmTools.ViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.WindowLoader.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)">
+            <summary>
+            
+            </summary>
+            <param name="messageBoxText"></param>
+            <param name="caption"></param>
+            <param name="button"></param>
+            <param name="icon"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Presto.MvvmTools.ViewModelBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewModelBase.#ctor(Presto.MvvmTools.IWindowLoader)">
+            <summary>
+            
+            </summary>
+            <param name="windowLoader"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewModelBase.OnRequestClose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewModelBase.OnPropertyChanged(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="P:Presto.MvvmTools.ViewModelBase.CloseCommand">
+            <summary>
+            Returns the command that, when invoked, attempts
+            to remove this workspace from the user interface.
+            </summary>
+        </member>
+        <member name="E:Presto.MvvmTools.ViewModelBase.RequestClose">
+            <summary>
+            Raised when this workspace should be removed from the UI.
+            </summary>
+        </member>
+        <member name="E:Presto.MvvmTools.ViewModelBase.PropertyChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Presto.MvvmTools.ViewModelBase.Parent">
+            <summary>
+            A reference to the view model instance that created this instance.
+            </summary>
+        </member>
+        <member name="P:Presto.MvvmTools.ViewModelBase.WindowLoader">
+            <summary>
+            An IWindowLoader provides methods that take a view model and, based
+            on its type, will resolve the appropriate view, set the view's 
+            DataContext to the view model and then display in the view in a
+            new window.
+            </summary>
+        </member>
+        <member name="P:Presto.MvvmTools.ViewModelBase.DisplayName">
+            <summary>
+            A user-friendly name for this object that can be used for anything
+            like window titles, tab captions, etc.
+            </summary>
+        </member>
+        <member name="P:Presto.MvvmTools.ViewModelBase.MainWindowViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Presto.MvvmTools.RelayCommand">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.RelayCommand.#ctor(System.Action{System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="execute"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.RelayCommand.#ctor(System.Predicate{System.Object},System.Action{System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="canExecute"></param>
+            <param name="execute"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.RelayCommand.CanExecute(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presto.MvvmTools.RelayCommand.Execute(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="parameter"></param>
+        </member>
+        <member name="E:Presto.MvvmTools.RelayCommand.CanExecuteChanged">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewMapper.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewMapper.Register(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="viewModelType"></param>
+            <param name="viewType"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewMapper.Unegister(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="viewModelType"></param>
+        </member>
+        <member name="M:Presto.MvvmTools.ViewMapper.ResolveView(Presto.MvvmTools.ViewModelBase)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
