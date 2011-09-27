@@ -1,5 +1,5 @@
-﻿using PrestoCore.BusinessLogic.Attributes;
-using System;
+﻿using System;
+using PrestoCore.BusinessLogic.Attributes;
 
 namespace PrestoCore.BusinessLogic.BusinessEntities
 {

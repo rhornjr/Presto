@@ -77,7 +77,7 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
 
         internal static string ReplaceVariablesWithValues( string stringIn, int taskGroupId )
         {
-            StringBuilder stringNew = new StringBuilder( stringIn );
+            StringBuilder stringNew = new StringBuilder(stringIn);
 
             // Get the custom variables and their values from app.config
             NameValueCollection customVariables = new NameValueCollection();
@@ -105,11 +105,34 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
                 customVariablesConfigPlusDb.Add( prefix + customVariable.VariableKey + suffix, customVariable.VariableValue );
             }
 
-            VerifyCustomVariablesExist( stringIn, customVariablesConfigPlusDb );
+            Dictionary<string, string> allCustomVariablesFinal = new Dictionary<string, string>();
 
-            foreach( string key in customVariablesConfigPlusDb.Keys )
+            // Custom variable values can themselves contain other custom variables. Resolve those custom variables
+            // so that all we are left with is the actual value, with no more pointers to other customer variables.
+            // For example, if the value is "C:\Temp\$(tempSubfolder)\$(tempAnotherSubfolder)", resolve the two
+            // custom variables so we're left with: "C:\Temp\Snuh\Snuh2".
+            foreach (KeyValuePair<string, string> kvp in customVariablesConfigPlusDb)
+            {                
+                allCustomVariablesFinal.Add(kvp.Key, ResolveAllCustomVariables(kvp.Value, customVariablesConfigPlusDb));
+            }
+
+            VerifyCustomVariablesExist(stringIn, allCustomVariablesFinal);
+
+            foreach (string key in allCustomVariablesFinal.Keys)
             {
-                stringNew.Replace( key, customVariablesConfigPlusDb[ key ] );
+                stringNew.Replace(key, allCustomVariablesFinal[key]);
+            }
+
+            return stringNew.ToString();
+        }
+
+        private static string ResolveAllCustomVariables(string incomingString, Dictionary<string, string> customVariablesConfigPlusDb)
+        {
+            StringBuilder stringNew = new StringBuilder(incomingString);
+
+            foreach (string key in customVariablesConfigPlusDb.Keys)
+            {
+                stringNew.Replace(key, customVariablesConfigPlusDb[key]);
             }
 
             return stringNew.ToString();

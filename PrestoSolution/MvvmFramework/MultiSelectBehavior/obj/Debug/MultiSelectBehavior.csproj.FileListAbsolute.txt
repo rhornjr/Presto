@@ -8,3 +8,8 @@ C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiS
 C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\ResolveAssemblyReference.cache
 C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.dll
 C:\DevProjects\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.pdb
+C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiSelectBehavior.dll
+C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MultiSelectBehavior\bin\Debug\MultiSelectBehavior.pdb
+C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.dll
+C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MultiSelectBehavior\obj\Debug\MultiSelectBehavior.pdb

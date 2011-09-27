@@ -247,6 +247,9 @@
     <Compile Include="Tabs\TaskTypeListView.xaml.cs">
       <DependentUpon>TaskTypeListView.xaml</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Documentation\ViewSequenceDiagram.sequencediagram.layout">
+      <DependentUpon>ViewSequenceDiagram.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -254,6 +257,8 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Documentation\ViewClassDiagram.cd" />
+    <None Include="Documentation\ViewSequenceDiagram.sequencediagram" />
     <None Include="HelloWorldService\HelloWorldWindowsService.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
