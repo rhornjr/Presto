@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="10.0">
  <Targets>
-  <Target Name="C:\DevProjects\PrestoSolution\MvvmFramework\MvvmTools\bin\Debug\Presto.MvvmTools.dll">
+  <Target Name="C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools\bin\Debug\Presto.MvvmTools.dll">
    <Modules>
     <Module Name="presto.mvvmtools.dll">
      <Namespaces>
@@ -12,8 +12,8 @@
          <Members>
           <Member Name="#ShowDialog(Presto.MvvmTools.ViewModelBase)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-08-20 01:26:59Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="C:\DevProjects\PrestoSolution\MvvmFramework\MvvmTools" File="WindowLoader.cs" Line="59">In externally visible method 'WindowLoader.ShowDialog(ViewModelBase)', validate parameter 'viewModel' before using it.</Issue>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-09-28 01:32:56Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools" File="WindowLoader.cs" Line="59">In externally visible method 'WindowLoader.ShowDialog(ViewModelBase)', validate parameter 'viewModel' before using it.</Issue>
             </Message>
            </Messages>
           </Member>

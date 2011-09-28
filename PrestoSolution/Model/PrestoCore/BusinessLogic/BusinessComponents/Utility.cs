@@ -75,34 +75,46 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
             return ReplaceVariablesWithValues( stringIn, -1 );  // HACK: -1 will not match any groups
         }
 
-        internal static string ReplaceVariablesWithValues( string stringIn, int taskGroupId )
+        internal static string ReplaceVariablesWithValues(string stringIn, int taskGroupId)
         {
             StringBuilder stringNew = new StringBuilder(stringIn);
 
+            Dictionary<string, string> allCustomVariables = GetAllCustomVariables(taskGroupId);
+
+            VerifyCustomVariablesExist(stringIn, allCustomVariables);
+
+            foreach (string key in allCustomVariables.Keys)
+            {
+                stringNew.Replace(key, allCustomVariables[key]);
+            }
+
+            return stringNew.ToString();
+        }
+
+        private static Dictionary<string, string> GetAllCustomVariables(int taskGroupId)
+        {
             // Get the custom variables and their values from app.config
-            NameValueCollection customVariables = new NameValueCollection();
-            
-            customVariables = ConfigurationManager.GetSection( "customVariables" ) as NameValueCollection;            
+            NameValueCollection customVariables = ConfigurationManager.GetSection("customVariables") as NameValueCollection;
 
             Dictionary<string, string> customVariablesConfigPlusDb = new Dictionary<string, string>();
 
             // Move the values in the NameValueCollection to the dictionary. (The NameValueCollection is read-only.)
-            foreach( string key in customVariables.Keys )
+            foreach (string key in customVariables.Keys)
             {
-                customVariablesConfigPlusDb.Add( key, customVariables[ key ] );
+                customVariablesConfigPlusDb.Add(key, customVariables[key]);
             }
 
             // Now get the custom variables from the DB, for this group.
-            ReadOnlyCollection<CustomVariable> customVariablesByGroup = CustomVariableLogic.GetCustomVariablesByGroupId( taskGroupId );
+            ReadOnlyCollection<CustomVariable> customVariablesByGroup = CustomVariableLogic.GetCustomVariablesByGroupId(taskGroupId);
 
             // Custom variables look like this: $(variableKey). So let's add the prefix and suffix to each key.
             string prefix = "$(";
             string suffix = ")";
 
             // Add these new custom variables to the list.
-            foreach( CustomVariable customVariable in customVariablesByGroup )
+            foreach (CustomVariable customVariable in customVariablesByGroup)
             {
-                customVariablesConfigPlusDb.Add( prefix + customVariable.VariableKey + suffix, customVariable.VariableValue );
+                customVariablesConfigPlusDb.Add(prefix + customVariable.VariableKey + suffix, customVariable.VariableValue);
             }
 
             Dictionary<string, string> allCustomVariablesFinal = new Dictionary<string, string>();
@@ -112,18 +124,11 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
             // For example, if the value is "C:\Temp\$(tempSubfolder)\$(tempAnotherSubfolder)", resolve the two
             // custom variables so we're left with: "C:\Temp\Snuh\Snuh2".
             foreach (KeyValuePair<string, string> kvp in customVariablesConfigPlusDb)
-            {                
+            {
                 allCustomVariablesFinal.Add(kvp.Key, ResolveAllCustomVariables(kvp.Value, customVariablesConfigPlusDb));
             }
 
-            VerifyCustomVariablesExist(stringIn, allCustomVariablesFinal);
-
-            foreach (string key in allCustomVariablesFinal.Keys)
-            {
-                stringNew.Replace(key, allCustomVariablesFinal[key]);
-            }
-
-            return stringNew.ToString();
+            return allCustomVariablesFinal;
         }
 
         private static string ResolveAllCustomVariables(string incomingString, Dictionary<string, string> customVariablesConfigPlusDb)

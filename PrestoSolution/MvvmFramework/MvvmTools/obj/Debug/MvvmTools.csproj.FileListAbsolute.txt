@@ -20,3 +20,4 @@ C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools\bin\Debug\Presto.Mv
 C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools\obj\Debug\Presto.MvvmTools.dll
 C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools\obj\Debug\Presto.MvvmTools.pdb
+C:\Users\rhorn\Presto\PrestoSolution\MvvmFramework\MvvmTools\bin\Debug\Presto.MvvmTools.xml

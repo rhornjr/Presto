@@ -4,11 +4,6 @@
         <name>Presto.MvvmTools</name>
     </assembly>
     <members>
-        <member name="T:Presto.MvvmTools.WindowLoader">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:Presto.MvvmTools.IWindowLoader">
             <summary>
             
@@ -48,6 +43,11 @@
             <param name="button"></param>
             <param name="icon"></param>
             <returns></returns>
+        </member>
+        <member name="T:Presto.MvvmTools.WindowLoader">
+            <summary>
+            
+            </summary>
         </member>
         <member name="M:Presto.MvvmTools.WindowLoader.#ctor">
             <summary>
