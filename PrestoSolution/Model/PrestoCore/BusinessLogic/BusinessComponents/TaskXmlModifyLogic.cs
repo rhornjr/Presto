@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Security.Permissions;
 using System.Xml;
@@ -56,11 +57,11 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
         /// 
         /// </summary>
         /// <param name="task"></param>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage( "Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes" ), System.Diagnostics.CodeAnalysis.SuppressMessage( "Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes" ), SecurityPermission( SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode )]
+        [SuppressMessage( "Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes" ), System.Diagnostics.CodeAnalysis.SuppressMessage( "Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes" ), SecurityPermission( SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode )]
         public override void Execute( TaskBase task )
         {
-            TaskXmlModify taskXmlModify = task as TaskXmlModify;
-            string xmlPathAndFileName = Utility.ReplaceVariablesWithValues(taskXmlModify.XmlPathAndFileName, task.TaskGroupId);
+            TaskXmlModify taskXmlModifyOriginal = task as TaskXmlModify;
+            TaskXmlModify taskXmlModify = GetTaskXmlModifyWithCustomVariablesResolved(taskXmlModifyOriginal);
 
             // Store this error to use when throwing exceptions.                
             string taskDetails = string.Format( CultureInfo.CurrentCulture,
@@ -74,7 +75,7 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
                                                 "Attribute to Change Value: {7}\r\n",
                                                 taskXmlModify.TaskItemId,
                                                 taskXmlModify.Description,
-                                                xmlPathAndFileName,
+                                                taskXmlModify.XmlPathAndFileName,
                                                 taskXmlModify.NodeToChange,
                                                 taskXmlModify.AttributeKey,
                                                 taskXmlModify.AttributeKeyValue,
@@ -84,7 +85,7 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
             try
             {
                 XmlDocument xmlDocument = new XmlDocument();
-                xmlDocument.Load(xmlPathAndFileName);
+                xmlDocument.Load(taskXmlModify.XmlPathAndFileName);
                 XmlElement rootElement = xmlDocument.DocumentElement;
 
                 XmlNodeList xmlNodes;
@@ -132,22 +133,38 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
                     }
                 }
 
-                xmlDocument.Save(xmlPathAndFileName);
+                xmlDocument.Save(taskXmlModify.XmlPathAndFileName);
                 xmlDocument = null;
 
-                taskXmlModify.TaskSucceeded = true;
+                taskXmlModifyOriginal.TaskSucceeded = true;
 
                 Utility.Log( taskDetails );
             }
             catch( Exception ex )
             {
-                taskXmlModify.TaskSucceeded = false;
+                taskXmlModifyOriginal.TaskSucceeded = false;
                 Utility.ProcessException( ex.Message + "\r\n" + taskDetails, ex, true );
             }
             finally
             {
                 Utility.Log( taskDetails );
             }
+        }
+
+        private TaskXmlModify GetTaskXmlModifyWithCustomVariablesResolved(TaskXmlModify taskXmlModifyOriginal)
+        {
+            TaskXmlModify taskXmlModifyResolved = new TaskXmlModify();
+
+            int groupId = taskXmlModifyOriginal.TaskGroupId;
+
+            taskXmlModifyResolved.AttributeKey           = Utility.ReplaceVariablesWithValues(taskXmlModifyOriginal.AttributeKey, groupId);
+            taskXmlModifyResolved.AttributeKeyValue      = Utility.ReplaceVariablesWithValues(taskXmlModifyOriginal.AttributeKeyValue, groupId);
+            taskXmlModifyResolved.AttributeToChange      = Utility.ReplaceVariablesWithValues(taskXmlModifyOriginal.AttributeToChange, groupId);
+            taskXmlModifyResolved.AttributeToChangeValue = Utility.ReplaceVariablesWithValues(taskXmlModifyOriginal.AttributeToChangeValue, groupId);
+            taskXmlModifyResolved.NodeToChange           = Utility.ReplaceVariablesWithValues(taskXmlModifyOriginal.NodeToChange, groupId);
+            taskXmlModifyResolved.XmlPathAndFileName     = Utility.ReplaceVariablesWithValues(taskXmlModifyOriginal.XmlPathAndFileName, groupId);
+
+            return taskXmlModifyResolved;
         }
 
         /// <summary>

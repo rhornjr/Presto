@@ -16,6 +16,10 @@
     <TaskGroupId>4</TaskGroupId>
     <TaskGroupName>Jimmy Two People</TaskGroupName>
   </TaskGroup>
+  <TaskGroup>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskGroupName>Jim XML and Custom Variables</TaskGroupName>
+  </TaskGroup>
   <TaskItem>
     <TaskItemId>1</TaskItemId>
     <FailureCausesAllStop>1</FailureCausesAllStop>
@@ -248,6 +252,182 @@
     <TaskTypeId>1</TaskTypeId>
     <Sequence>0</Sequence>
   </TaskItem>
+  <TaskItem>
+    <TaskItemId>30</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set PeerResolver in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>10</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>31</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Create Plugins Folder - Authorization</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>0</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>32</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Create Plugins Folder - ExceptionHandlers</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>1</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>33</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Create Plugins Folder - Loggers</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>2</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>34</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Copy AuthorizationHandlers</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>3</TaskTypeId>
+    <Sequence>3</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>35</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Copy ExceptionHandlers</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>3</TaskTypeId>
+    <Sequence>4</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>36</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Copy Loggers</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>3</TaskTypeId>
+    <Sequence>5</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>37</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Create Polar Installation Folder</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>6</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>38</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Copy Polar Production Release Files</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>3</TaskTypeId>
+    <Sequence>7</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>39</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set discovery section in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>8</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>40</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set SiteCode in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>9</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>41</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set PBG Discovery Proxy Hostname in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>11</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>42</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set KLM Discovery Proxy Hostname in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>12</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>43</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set FFO Discovery Proxy Hostname in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>13</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>44</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set unit ID in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>14</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>45</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set unit name in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>15</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>46</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set PLC IP address in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>16</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>47</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set ProcessingServiceAutostart to true in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>17</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>48</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Set connection string in config file</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>2</TaskTypeId>
+    <Sequence>18</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>49</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Create Polar Service</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>19</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>50</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Config Polar Service</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>20</Sequence>
+  </TaskItem>
+  <TaskItem>
+    <TaskItemId>51</TaskItemId>
+    <FailureCausesAllStop>0</FailureCausesAllStop>
+    <Description>** STOP ** Manually bring the cluster online</Description>
+    <TaskGroupId>5</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>21</Sequence>
+  </TaskItem>
   <TaskCopyFile>
     <TaskItemId>3</TaskItemId>
     <SourcePath>$(productionReleaseFolder)</SourcePath>
@@ -274,6 +454,30 @@
   </TaskCopyFile>
   <TaskCopyFile>
     <TaskItemId>13</TaskItemId>
+    <SourcePath>$(polarProductionReleaseFolder)</SourcePath>
+    <SourceFileName>*</SourceFileName>
+    <DestinationPath>$(polarInstallationFolder)</DestinationPath>
+  </TaskCopyFile>
+  <TaskCopyFile>
+    <TaskItemId>34</TaskItemId>
+    <SourcePath>$(polarProductionReleaseFolder)</SourcePath>
+    <SourceFileName>ClaimsAuthorizationHandler*</SourceFileName>
+    <DestinationPath>$(pluginRootFolder)\AuthorizationHandlers</DestinationPath>
+  </TaskCopyFile>
+  <TaskCopyFile>
+    <TaskItemId>35</TaskItemId>
+    <SourcePath>$(polarProductionReleaseFolder)</SourcePath>
+    <SourceFileName>FirstSolar.Mes.DefaultExceptionHandler*</SourceFileName>
+    <DestinationPath>$(pluginRootFolder)\ExceptionHandlers</DestinationPath>
+  </TaskCopyFile>
+  <TaskCopyFile>
+    <TaskItemId>36</TaskItemId>
+    <SourcePath>$(polarProductionReleaseFolder)</SourcePath>
+    <SourceFileName>EventLogLogger*</SourceFileName>
+    <DestinationPath>$(pluginRootFolder)\Loggers</DestinationPath>
+  </TaskCopyFile>
+  <TaskCopyFile>
+    <TaskItemId>38</TaskItemId>
     <SourcePath>$(polarProductionReleaseFolder)</SourcePath>
     <SourceFileName>*</SourceFileName>
     <DestinationPath>$(polarInstallationFolder)</DestinationPath>
@@ -348,6 +552,41 @@
     <TaskItemId>29</TaskItemId>
     <DosExecutable>cmd</DosExecutable>
     <Parameters>/c mkdir "$(polarInstallationFolder)"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>31</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c mkdir "$(pluginRootFolder)\AuthorizationHandlers"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>32</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c mkdir "$(pluginRootFolder)\ExceptionHandlers"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>33</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c mkdir "$(pluginRootFolder)\Loggers"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>37</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c mkdir "$(polarInstallationFolder)"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>49</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c sc create "$(serviceName) $(serviceNameSuffix)" binPath= "$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>50</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c sc config "$(serviceName) $(serviceNameSuffix)" obj= "$(account)" password= "$(password)"</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>51</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c exit</Parameters>
   </TaskDosCommand>
   <TaskXmlModify>
     <TaskItemId>1</TaskItemId>
@@ -466,6 +705,105 @@
     <AttributeToChange>connectionString</AttributeToChange>
     <AttributeToChangeValue>Data Source = FFO1SQLSDLC01; Initial Catalog = PROD_DATA; Integrated Security = True</AttributeToChangeValue>
   </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>30</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>discoveryProxyConfiguration/PeerResolver</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>HostName</AttributeToChange>
+    <AttributeToChangeValue>PBGXXMESPEERQ</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>39</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>configSections/section[@name='discoveryProxyConfiguration']</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>type</AttributeToChange>
+    <AttributeToChangeValue>FirstSolar.Mes.Core.Common.Wcf.Discovery.Configuration.DiscoveryConfigurationSection, FirstSolar.Mes.Core.Common</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>40</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>discoveryProxyConfiguration</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>SiteCode</AttributeToChange>
+    <AttributeToChangeValue>$(site)</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>41</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>discoveryProxyConfiguration/discoveryProxies/discoveryProxy</NodeToChange>
+    <AttributeKey>Name</AttributeKey>
+    <AttributeKeyValue>PBG</AttributeKeyValue>
+    <AttributeToChange>HostName</AttributeToChange>
+    <AttributeToChangeValue>PBGXXMESDISCQ</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>42</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>discoveryProxyConfiguration/discoveryProxies/discoveryProxy</NodeToChange>
+    <AttributeKey>Name</AttributeKey>
+    <AttributeKeyValue>KLM</AttributeKeyValue>
+    <AttributeToChange>HostName</AttributeToChange>
+    <AttributeToChangeValue>KLMXXMESDISCQ</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>43</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>discoveryProxyConfiguration/discoveryProxies/discoveryProxy</NodeToChange>
+    <AttributeKey>Name</AttributeKey>
+    <AttributeKeyValue>FFO</AttributeKeyValue>
+    <AttributeToChange>HostName</AttributeToChange>
+    <AttributeToChangeValue>FFOXXMESDISCQ</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>44</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>polarServer/unit</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>UnitID</AttributeToChange>
+    <AttributeToChangeValue>$(unitID)</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>45</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>polarServer/unit</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>Name</AttributeToChange>
+    <AttributeToChangeValue>$(site) $(plantUnit)</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>46</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>polarServer/processingService/plcConnectProperties</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>IPAddress</AttributeToChange>
+    <AttributeToChangeValue>$(plcAddress)</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>47</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>polarServer</NodeToChange>
+    <AttributeKey />
+    <AttributeKeyValue />
+    <AttributeToChange>ProcessingServiceAutostart</AttributeToChange>
+    <AttributeToChangeValue>$(processingServiceAutostart)</AttributeToChangeValue>
+  </TaskXmlModify>
+  <TaskXmlModify>
+    <TaskItemId>48</TaskItemId>
+    <XmlPathAndFileName>$(polarInstallationFolder)\FirstSolar.Mes.Apps.Polar.ServiceHost.exe.Config</XmlPathAndFileName>
+    <NodeToChange>connectionStrings/add</NodeToChange>
+    <AttributeKey>name</AttributeKey>
+    <AttributeKeyValue>Production</AttributeKeyValue>
+    <AttributeToChange>connectionString</AttributeToChange>
+    <AttributeToChangeValue>$(connectionString)</AttributeToChangeValue>
+  </TaskXmlModify>
   <CustomVariable>
     <TaskGroupId>1</TaskGroupId>
     <VariableKey>serviceName</VariableKey>
@@ -567,5 +905,83 @@
     <VariableKey>site</VariableKey>
     <VariableValue>KLM</VariableValue>
     <CustomVariableId>17</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>password</VariableKey>
+    <VariableValue>cqy6y$s8</VariableValue>
+    <CustomVariableId>18</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>account</VariableKey>
+    <VariableValue>fs\zService_ProductionF</VariableValue>
+    <CustomVariableId>19</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>connectionString</VariableKey>
+    <VariableValue>Data Source = FFOMESPRODUCTION; Initial Catalog = Prod_Data; Integrated Security = True</VariableValue>
+    <CustomVariableId>20</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>plantUnit</VariableKey>
+    <VariableValue>1.1</VariableValue>
+    <CustomVariableId>21</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>plcAddress</VariableKey>
+    <VariableValue>192.168.74.211</VariableValue>
+    <CustomVariableId>22</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>pluginRootFolder</VariableKey>
+    <VariableValue>C:\First Solar PlugIns</VariableValue>
+    <CustomVariableId>23</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>polarInstallationFolder</VariableKey>
+    <VariableValue>C:\Program Files (x86)\First Solar\$(serviceName) $(serviceNameSuffix)\</VariableValue>
+    <CustomVariableId>24</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>polarProductionReleaseFolder</VariableKey>
+    <VariableValue>\\sys02\h\Business Systems\MES\Assemblies\Builds\Polar\Build 1.2\Server\Release</VariableValue>
+    <CustomVariableId>25</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>processingServiceAutostart</VariableKey>
+    <VariableValue>false</VariableValue>
+    <CustomVariableId>26</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>serviceName</VariableKey>
+    <VariableValue>Polar</VariableValue>
+    <CustomVariableId>27</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>serviceNameSuffix</VariableKey>
+    <VariableValue>$(site) $(plantUnit)</VariableValue>
+    <CustomVariableId>28</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>site</VariableKey>
+    <VariableValue>FFO</VariableValue>
+    <CustomVariableId>29</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>5</TaskGroupId>
+    <VariableKey>unitID</VariableKey>
+    <VariableValue>1</VariableValue>
+    <CustomVariableId>30</CustomVariableId>
   </CustomVariable>
 </PrestoDataset>

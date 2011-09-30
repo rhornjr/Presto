@@ -15,3 +15,4 @@ C:\Users\rhorn\Presto\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.pdb
 C:\Users\rhorn\Presto\PrestoSolution\Model\PrestoCore\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\rhorn\Presto\PrestoSolution\Model\PrestoCore\obj\Debug\PrestoCore.dll
 C:\Users\rhorn\Presto\PrestoSolution\Model\PrestoCore\obj\Debug\PrestoCore.pdb
+C:\Users\rhorn\Presto\PrestoSolution\Model\PrestoCore\bin\Debug\PrestoCore.XML
