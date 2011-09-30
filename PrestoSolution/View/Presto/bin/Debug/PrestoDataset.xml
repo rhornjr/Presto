@@ -12,6 +12,10 @@
     <TaskGroupId>3</TaskGroupId>
     <TaskGroupName>Testing</TaskGroupName>
   </TaskGroup>
+  <TaskGroup>
+    <TaskGroupId>4</TaskGroupId>
+    <TaskGroupName>Jimmy Two People</TaskGroupName>
+  </TaskGroup>
   <TaskItem>
     <TaskItemId>1</TaskItemId>
     <FailureCausesAllStop>1</FailureCausesAllStop>
@@ -236,6 +240,14 @@
     <TaskTypeId>1</TaskTypeId>
     <Sequence>0</Sequence>
   </TaskItem>
+  <TaskItem>
+    <TaskItemId>29</TaskItemId>
+    <FailureCausesAllStop>1</FailureCausesAllStop>
+    <Description>Create Polar Installation Folder</Description>
+    <TaskGroupId>4</TaskGroupId>
+    <TaskTypeId>1</TaskTypeId>
+    <Sequence>0</Sequence>
+  </TaskItem>
   <TaskCopyFile>
     <TaskItemId>3</TaskItemId>
     <SourcePath>$(productionReleaseFolder)</SourcePath>
@@ -331,6 +343,11 @@
     <TaskItemId>28</TaskItemId>
     <DosExecutable>cmd</DosExecutable>
     <Parameters>/c mkdir $(tempFolderPath)</Parameters>
+  </TaskDosCommand>
+  <TaskDosCommand>
+    <TaskItemId>29</TaskItemId>
+    <DosExecutable>cmd</DosExecutable>
+    <Parameters>/c mkdir "$(polarInstallationFolder)"</Parameters>
   </TaskDosCommand>
   <TaskXmlModify>
     <TaskItemId>1</TaskItemId>
@@ -508,5 +525,47 @@
     <VariableKey>subFolder2</VariableKey>
     <VariableValue>snuh2</VariableValue>
     <CustomVariableId>10</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>serviceNameSuffix</VariableKey>
+    <VariableValue>$(site) $(plantUnit)</VariableValue>
+    <CustomVariableId>11</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>plantUnit</VariableKey>
+    <VariableValue>2.2</VariableValue>
+    <CustomVariableId>12</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>pluginRootFolder</VariableKey>
+    <VariableValue>C:\First Solar PlugIns</VariableValue>
+    <CustomVariableId>13</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>polarInstallationFolder</VariableKey>
+    <VariableValue>C:\Program Files (x86)\First Solar\$(serviceName) $(serviceNameSuffix)\</VariableValue>
+    <CustomVariableId>14</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>polarProductionReleaseFolder</VariableKey>
+    <VariableValue>\\sys02\h\Business Systems\MES\Assemblies\Builds\Polar\Build 1.2\Server\Release</VariableValue>
+    <CustomVariableId>15</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>serviceName</VariableKey>
+    <VariableValue>Polar</VariableValue>
+    <CustomVariableId>16</CustomVariableId>
+  </CustomVariable>
+  <CustomVariable>
+    <TaskGroupId>4</TaskGroupId>
+    <VariableKey>site</VariableKey>
+    <VariableValue>KLM</VariableValue>
+    <CustomVariableId>17</CustomVariableId>
   </CustomVariable>
 </PrestoDataset>

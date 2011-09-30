@@ -135,29 +135,45 @@ namespace PrestoCore.BusinessLogic.BusinessComponents
         {
             StringBuilder stringNew = new StringBuilder(incomingString);
 
-            foreach (string key in customVariablesConfigPlusDb.Keys)
+            do
             {
-                stringNew.Replace(key, customVariablesConfigPlusDb[key]);
+                foreach (string key in customVariablesConfigPlusDb.Keys)
+                {
+                    stringNew.Replace(key, customVariablesConfigPlusDb[key]);  // <- This could actually contain more custom variables. That's why we need to keep looping.
+                }
             }
+            while (StringHasCustomVariable(stringNew.ToString()) == true);
 
             return stringNew.ToString();
+        }
+
+        private static bool StringHasCustomVariable(string sourceString)
+        {
+            MatchCollection matchCollection = GetMatchCollection(sourceString);
+
+            return matchCollection != null && matchCollection.Count > 0;
+        }
+
+        private static MatchCollection GetMatchCollection(string sourceString)
+        {
+            // Use a regex to find all custom variables in sourceString. The pattern is $(variableName).
+
+            // Explanation of regular expression below:
+            // \$  : finds the dollar sign (has to be escaped with the slash)
+            // \(  : finds the left parenthesis
+            // .+? : . matches any character, + means one or more, ? means ungreedy (will consume characters until the FIRST occurrence of the right parenthesis)
+            // \)  : finds the right parenthesis
+            Regex regex = new Regex(@"\$\(.+?\)");
+
+            return regex.Matches(sourceString);
         }
 
         private static void VerifyCustomVariablesExist( string sourceString, Dictionary<string, string> customVariables )
         {
             // Make sure the custom variable exists. For example, if sourceString contains a custom variable, that custom variable needs
             // to exist in the customVariables list. If it doesn't, throw an exception.
-            
-            // Use a regex to find all custom variables in sourceString. The pattern is $(variableName).
 
-            // Explanation of regular expression below:
-            // \$  : finds the dollar sign (has to be escaped with the slash)
-            // \(  : finds the left paraethesis
-            // .+? : . matches any character, + means one or more, ? means ungreedy (will consume characters until the FIRST occurrence of the right parenthesis)
-            // \)  : finds the right parenthesis
-            Regex regex = new Regex( @"\$\(.+?\)" );
-
-            MatchCollection matchCollection = regex.Matches( sourceString );
+            MatchCollection matchCollection = GetMatchCollection(sourceString);
 
             // For each custom variable that we find in the string, make sure it exists in the customVariables list.
             foreach( Match match in matchCollection )
